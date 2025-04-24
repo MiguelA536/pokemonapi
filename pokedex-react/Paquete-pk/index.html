@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mi Pokédex</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1><span class="pokemon-titulo">POKÉMON</span> <span class="subtitulo">Pokédex</span></h1>
+
+  <div class="filtros">
+    <input type="text" id="pokemonInput" placeholder="Buscar por nombre...">
+    <select id="tipoFiltro">
+      <option value="">Todos los tipos</option>
+      <option value="fire">Fuego</option>
+      <option value="water">Agua</option>
+      <option value="grass">Planta</option>
+      <option value="electric">Eléctrico</option>
+      <option value="psychic">Psíquico</option>
+      <option value="rock">Roca</option>
+      <option value="ground">Tierra</option>
+      <option value="ghost">Fantasma</option>
+      <option value="dragon">Dragón</option>
+    </select>
+    <input type="number" id="alturaMin" placeholder="Altura mínima (m)">
+    <input type="number" id="alturaMax" placeholder="Altura máxima (m)">
+    <input type="number" id="pesoMin" placeholder="Peso mínimo (kg)">
+    <input type="number" id="pesoMax" placeholder="Peso máximo (kg)">
+  </div>
+
+  <div id="pokemonInfo"></div>
+  <button id="playMusicBtn">🎵 Activar música</button>
+
+  <!-- 🎵 Audio oculto -->
+  <audio id="bg-music" loop>
+    <source src="audio/pokemon-theme.mp3" type="audio/mpeg">
+  </audio>
+  <script src="script.js"></script>
+  
+</body>
+</html>
